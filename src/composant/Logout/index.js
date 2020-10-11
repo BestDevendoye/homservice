@@ -21,8 +21,14 @@ const Logout = () => {
 
     return (
         <div className="logoutContainer">
+        <h6>Deconnexion</h6>
             <label className="switch">
-               <button onClick={handleChange}>Deconnexion</button>
+                <input 
+                    onChange={handleChange}
+                    type="checkbox"
+                    checked={checked}
+                />
+                <span className="slider round" data-tip="Déconnexion"></span>
             </label>
         
         </div>
