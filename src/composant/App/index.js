@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from '../Header'
 import Footer from '../Footer'
 import Welcome from '../Welcome'
-import Login from '../Login'
+import Acceuil from '../Acceuil'
 import Signup from '../Signup'
 import ErrorPage from '../ErrorPage'
 import ForgetPassword from '../ForgetPassword'
@@ -16,7 +16,7 @@ function App() {
         <Header />
 
         <Switch>
-          <Route exact path="/" component={Login} />
+          <Route exact path="/" component={Acceuil} />
           <Route path="/welcome" component={Welcome} />
           <Route path="/signup" component={Signup} />
           <Route path="/forgetpassword" component={ForgetPassword} />

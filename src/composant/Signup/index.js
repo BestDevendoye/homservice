@@ -83,7 +83,7 @@ const Signup = (props) => {
                             {btn}
                         </form>
                         <div className="linkContainer">
-                            <Link className="simpleLink" to="/">Déjà inscrit? Connectez-vous.</Link>
+                            <Link className="simpleLink" to="/homservice">Déjà inscrit? Connectez-vous.</Link>
                         </div>
                     </div>
                 </div>
