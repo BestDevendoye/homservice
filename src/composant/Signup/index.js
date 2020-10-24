@@ -49,6 +49,18 @@ const Signup = (props) => {
     const errorMsg = error !== '' && <span>{error.message}</span>;
 
     return (
+        <div className="containerLogin">
+        <div className="rightcontainer">
+        <h2 className="securite"><strong>Sécurisez votre domicile<br /> en toute sérénité</strong>
+        </h2>
+        <h2 className="securite2">
+        En cas d’intrusion <br />Nous agissons immédiatement
+        </h2>
+        <h2 className="plus">
+        Je veux en savoir plus
+        </h2>
+        
+        </div>
         <div className="signUpLoginBox">
             <div className="slContainer">
                 <div className="formBoxLeftSignup">
@@ -57,8 +69,7 @@ const Signup = (props) => {
                     <div className="formContent">
 
                     {errorMsg}
-
-                    <h2>Inscription</h2>
+                    <h6 className="accederservice">Inscription</h6>
                         <form onSubmit={handleSubmit}>
                             <div className="inputBox">
                                 <input onChange={handleChange} value={pseudo} type="text" id="pseudo" autoComplete="off" required />
@@ -81,13 +92,13 @@ const Signup = (props) => {
                             </div>
 
                             {btn}
+                            <Link className="simpleLinkcenter" to="/">Déjà inscrit? Connectez-vous.</Link>
                         </form>
-                        <div className="linkContainer">
-                            <Link className="simpleLink" to="/homservice">Déjà inscrit? Connectez-vous.</Link>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

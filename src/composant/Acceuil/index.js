@@ -37,41 +37,53 @@ const Login = (props) => {
     }
 
     return (
+
+   <div className="containerLogin">
+        <div className="rightcontainer">
+        <h2 className="securite"><strong>Sécurisez votre domicile<br /> en toute sérénité</strong>
+        </h2>
+        <h2 className="securite2">
+        En cas d’intrusion <br />Nous agissons immédiatement
+        </h2>
+        <h2 className="plus">
+        Je veux en savoir plus
+        </h2>
+        
+        </div>
         <div className="signUpLoginBox">
-            <div className="slContainer">
-                <div className="formBoxLeftLogin">
-                </div>
-                <div className="formBoxRight">
-                    <div className="formContent">
+        <div className="slContainer">
+            <div className="formBoxLeftLogin">
+            </div>
+            <div className="formBoxRight">
+                <div className="formContent">
 
-                        {error !== '' && <span>{error.message}</span>}
+                    {error !== '' && <span>{error.message}</span>}
 
-                        <h3>Déja client?</h3>
-                        <h6>Accédez aux services</h6>
-                        <form onSubmit={handleSubmit}>
+                    <h3 className="dejaclient">Déjà client ?</h3>
+                    <h6 className="accederservice">Accédez aux services</h6>
+                    <form onSubmit={handleSubmit}>
 
-                            <div className="inputBox">
-                                <input onChange={e => setEmail(e.target.value)} value={email} type="email" autoComplete="off" required />
-                                <label htmlFor="email">Email</label>
-                            </div>
-
-                            <div className="inputBox">
-                                <input onChange={e => setPassword(e.target.value)} value={password} type="password" autoComplete="off" required />
-                                <label htmlFor="password">Mot de passe</label>
-                            </div>
-
-                            {btn ? <button>Connexion</button> : <button disabled>Connexion</button> }
-
-                        </form>
-                        <div className="linkContainer">
-                            <Link className="simpleLink" to="/signup">Nouveau sur mon homeservice ? Inscrivez-vous maintenant.</Link>
-                            <br />
-                            <Link className="simpleLink" to="/forgetpassword">Mot de passe oublié? Récupérez-le ici.</Link>
+                        <div className="inputBox">
+                            <input onChange={e => setEmail(e.target.value)} value={email} type="email" autoComplete="off" required />
+                            <label htmlFor="email">Email</label>
                         </div>
-                    </div>
+
+                        <div className="inputBox">
+                            <input onChange={e => setPassword(e.target.value)} value={password} type="password" autoComplete="off" required />
+                            <label htmlFor="password">Mot de passe</label>
+                        </div>
+                        <Link className="simpleLink" to="/forgetpassword">Mot de passe perdu ?</Link>
+
+                        {btn ? <button>Me connecter</button> : <button disabled>Me connecter</button> }
+                      
+                    </form>
+                    <Link className="simpleLinkInsc" to="/signup">Je n’ai pas de compte</Link>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+       
     )
 }
 

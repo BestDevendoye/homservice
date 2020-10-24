@@ -34,6 +34,18 @@ const ForgetPassword = props => {
     const disabled = email === "";
 
     return (
+        <div className="containerLogin">
+        <div className="rightcontainer">
+        <h2 className="securite"><strong>Sécurisez votre domicile<br /> en toute sérénité</strong>
+        </h2>
+        <h2 className="securite2">
+        En cas d’intrusion <br />Nous agissons immédiatement
+        </h2>
+        <h2 className="plus">
+        Je veux en savoir plus
+        </h2>
+        
+        </div>
         <div className="signUpLoginBox">
             <div className="slContainer">
                 <div className="formBoxLeftForget">
@@ -55,7 +67,7 @@ const ForgetPassword = props => {
 
                         {error && <span>{error.message}</span>}
 
-                        <h2>Mot de passe oublié?</h2>
+                        <h3 className="oublie">Mot de passe oublié ?</h3>
                         <form onSubmit={handleSubmit}>
 
                             <div className="inputBox">
@@ -67,12 +79,12 @@ const ForgetPassword = props => {
 
                         </form>
 
-                        <div className="linkContainer">
-                            <Link className="simpleLink" to="/login">Déjà inscrit? Connectez-vous.</Link>
-                        </div>
+                            <Link className="simpleLinkcenter" to="/">Déjà inscrit? Connectez-vous.</Link>
+                               
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
