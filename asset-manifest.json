@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/homservice/static/css/main.ac94e425.chunk.css",
-    "main.js": "/homservice/static/js/main.c00b7fbb.chunk.js",
-    "main.js.map": "/homservice/static/js/main.c00b7fbb.chunk.js.map",
+    "main.css": "/homservice/static/css/main.85562010.chunk.css",
+    "main.js": "/homservice/static/js/main.804d1460.chunk.js",
+    "main.js.map": "/homservice/static/js/main.804d1460.chunk.js.map",
     "runtime-main.js": "/homservice/static/js/runtime-main.f07fe675.js",
     "runtime-main.js.map": "/homservice/static/js/runtime-main.f07fe675.js.map",
     "static/js/2.355adb3e.chunk.js": "/homservice/static/js/2.355adb3e.chunk.js",
     "static/js/2.355adb3e.chunk.js.map": "/homservice/static/js/2.355adb3e.chunk.js.map",
     "index.html": "/homservice/index.html",
-    "precache-manifest.b9d0eccd635a8c0bf8c4edc5b87050f1.js": "/homservice/precache-manifest.b9d0eccd635a8c0bf8c4edc5b87050f1.js",
+    "precache-manifest.bcf8fdce62e3f14731a48437e7c2c0f3.js": "/homservice/precache-manifest.bcf8fdce62e3f14731a48437e7c2c0f3.js",
     "service-worker.js": "/homservice/service-worker.js",
-    "static/css/main.ac94e425.chunk.css.map": "/homservice/static/css/main.ac94e425.chunk.css.map",
+    "static/css/main.85562010.chunk.css.map": "/homservice/static/css/main.85562010.chunk.css.map",
     "static/js/2.355adb3e.chunk.js.LICENSE.txt": "/homservice/static/js/2.355adb3e.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/homservice/static/media/spiderman.6a1254d8.png"
+    "static/media/App.css": "/homservice/static/media/déco-feng-shui3.76b410d5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f07fe675.js",
     "static/js/2.355adb3e.chunk.js",
-    "static/css/main.ac94e425.chunk.css",
-    "static/js/main.c00b7fbb.chunk.js"
+    "static/css/main.85562010.chunk.css",
+    "static/js/main.804d1460.chunk.js"
   ]
 }
