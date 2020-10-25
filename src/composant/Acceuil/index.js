@@ -59,7 +59,7 @@ const Login = (props) => {
 
                     {error !== '' && <span>{error.message}</span>}
 
-                    <h3 className="dejaclient">Déjà client ?</h3>
+                    <h2 className="dejaclient">Déjà client ?</h2>
                     <h6 className="accederservice">Accédez aux services</h6>
                     <form onSubmit={handleSubmit}>
 
@@ -83,6 +83,7 @@ const Login = (props) => {
         </div>
     </div>
     </div>
+ 
        
     )
 }

@@ -61,15 +61,15 @@ const Signup = (props) => {
         </h2>
         
         </div>
-        <div className="signUpLoginBox">
+        <div className="signUpSignBox">
             <div className="slContainer">
                 <div className="formBoxLeftSignup">
                 </div>
                 <div className="formBoxRight">
                     <div className="formContent">
 
-                    {errorMsg}
-                    <h6 className="accederservice">Inscription</h6>
+                    <span>{errorMsg}</span>
+                    <h6 className="accederservice1">Inscription</h6>
                         <form onSubmit={handleSubmit}>
                             <div className="inputBox">
                                 <input onChange={handleChange} value={pseudo} type="text" id="pseudo" autoComplete="off" required />

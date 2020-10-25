@@ -1,46 +1,13 @@
 
 
-/* :ROOT * H1 H2 H3 */
-/* BODY */
-/* HR */
-/* HEADER */
-/* MAIN */
-/* WELCOME PAGE */
-/* TOASTIFY COLOR */
-/* FOOTER */
-/* ERROR PAGE */
-/* SIGNUP - LOGIN - FORGETPASSWORD */
-/* LOADER */
-/* LOGOUT SWITCH */
-/* LEVELS */
-/* PROGRESS BAR */
-/* ANSWER OPTIONS*/
-/* QUIZOVER */
-/* SUBMIT BUTTON */
-/* MODAL */
-/* MEDIA QUERIES */
-
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Anton|Bangers|Carter+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
-:root {
-  --deep-white-color: #ffffff;
-  --light-grey-color: #EAE8E8;
-  --light-green-color: #1ecc78;
-  --green-color: #0cb765;
-  --red-color: #EB1D27;
-  --blue-color: #4f78a4;
-  --dark-red-color: #d31017;
-  --dark-grey-color: #363636;
-  --black-color: #333030;
-  --deep-black-color: #000000;
-  --deep-blue-color: #0f1ce1
-}
 
 * {
   font-family: 'Nunito', sans-serif;
+  width: 100%;
+
 }
 
 
@@ -54,6 +21,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 10px 10px 10px 10x;
+
   
 }
 
@@ -66,15 +35,37 @@ hr {
 }
 
 /* HEADER */
-header {
-  display: flex;
-  justify-content: center;
-}
+
+
 
 .banner-container {
-  padding: 20px 0;
-  flex-basis: 80%;
+ display: flex;
+ height: 150px;
+ padding: 0;
+ margin: 0;
+ box-shadow: rgba(173, 173, 173, 0.16);
 }
+.logo{
+  background-color: cornflowerblue;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  float: left;
+  
+}
+.center-logo{
+  display: flex ;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
 /* END HEADER */
 
 /* MAIN */
@@ -109,7 +100,7 @@ footer {
 .quiz-bg {
   margin: 0;
   padding: 0;
-  background-color: var(--deep-white-color);
+  background-color: blue;
   display: flex;
   justify-content: center;
 }
@@ -132,10 +123,26 @@ footer {
 position: absolute;
 width: 100%;
 display: flex;
+padding-bottom: 20px;
+margin-top: 20px;
+flex-direction: row;
+background-image: url('./images/déco-feng-shui3.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 500px;
 margin: 0;
 padding: 0;
-flex-direction: row;
-top:100px;
+
+}
+
+span
+{
+  display: block;
+  color: rgba(53, 151, 255, 1);
+  text-align: center;
+  padding: 10px;
+  margin: 15px 0;
 }
 
 .rightcontainer
@@ -153,9 +160,8 @@ padding: 0;
 .securite
 {
   color: rgba(0, 0, 0, 1);
-  font-weight: bolder;
+  font-weight: 900;
   text-align: left;
-  font-family: 'Nunito', sans-serif;
   display: block;
   font-size: 40px;
   font-family: 'Nunito', sans-serif;
@@ -171,7 +177,7 @@ padding: 0;
   font-family: 'Nunito', sans-serif;
   display: block;
   font-size: 25px;
-  font-family: 'Nunito', sans-serif;
+
 }
 .plus
 {
@@ -190,31 +196,51 @@ padding: 0;
 
 .signUpLoginBox {
   border-color: rgba(255, 255, 255, 1);
-  width:350px;
-  height:400px;
+  width:320px;
+  height:300px;
   position: relative;
-  border: 1px solid none;
   left: 550px;
   top:  50px;
   border-radius: 40px;
   right: 100px;
+  margin: 0%;
+  padding: 0%;
+  background-color: white;
 
 }
+.signUpSignBox {
+  border-color: rgba(255, 255, 255, 1);
+  width:350px;
+  height:420px;
+  position: relative;
+  left: 550px;
+  top:  10px;
+  border-radius: 40px;
+  right: 100px;
+  margin: 20px;
+  padding: 0%;
+  background-color: white;
+
+
+}
+
 
 .slContainer {
   flex: 0 1 80%;
   display: flex;
   padding: 0px;
+  margin: 0px;
 justify-content: center;
 }
 
 .dejaclient {
   font-size: 25px;
   text-align: center;
-  font-weight: bolder;
+  font-weight: 900;
   color: rgba(0, 0, 0, 1);
   margin: 0px;
   padding: 10px 0px 0px 0px;
+  font-family: 'Nunito', sans-serif;
 
 }
 .oublie{
@@ -225,6 +251,7 @@ justify-content: center;
   margin: 0px;
   padding: 20px auto;
   margin: 20px auto;
+  font-family: 'Nunito', sans-serif;
 
 }
 
@@ -236,46 +263,34 @@ justify-content: center;
   margin: 0px;
   padding: 0px;
   text-align: center;
+  font-family: 'Nunito', sans-serif;
 }
 
-
-.formBoxLeftForget {
-  min-height: 500px;
-  background-image: url(images/deadpool.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  flex: 0 1 50%;
-}
-
-.formBoxRight {
-  flex: 0 1 50%;
-}
-
-.formBoxRight span {
-  display: block;
-  color: var(--deep-blue-color);
+.accederservice1{
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 1);
+  margin: 0px;
+  padding: 0px;
   text-align: center;
-  border: 1px solid var(--deep-blue-color);
-  padding: 10px;
-  margin: 15px 0;
+  line-height: 20px;
+  font-family: 'Nunito', sans-serif;
 }
+
+
 
 .formContent {
   width: 100%;
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
+  margin: 0;
 }
 
-.formContent h2 {
-  margin: 0 0 40px 0;
-  padding: 0;
-  color: var(--deep-black-color);
-  text-transform: uppercase;
-}
 
 .formContent .inputBox {
   position: relative;
   padding-top: 10px;
+  outline: none;
 }
 
 .formContent .inputBox input {
@@ -286,7 +301,18 @@ justify-content: center;
   background: transparent;
   border: 1px solid rgba(53, 151, 255, 0.5);
   border-radius: 20px;
+  outline: none;
 
+}
+
+.formContent .inputBox input:focus~label,
+.formContent .inputBox input:valid~label {
+  top: -30px;
+  left: 0;
+  color: var(--white-color);
+  font-size: 16px;
+  font-style: italic;
+  display: none;
 }
 
 .formContent .inputBox label {
@@ -303,19 +329,10 @@ justify-content: center;
   transition: 0.2s ease-in;
   text-align: center;
   border: none;
+  border-radius: 20px;
+
 }
 
-.formContent .inputBox input:focus~label,
-.formContent .inputBox input:valid~label {
-  top: -30px;
-  left: 0;
-  color: var(--deep-black-color);
-  font-size: 16px;
-  font-style: italic;
-  display: none;
-  border: none;
-  text-decoration: none;
-}
 
 /* Form buttons */
 .formContent button {
@@ -330,6 +347,7 @@ justify-content: center;
   border-radius: 10px;
   margin-top: 10px;
   border: none;
+  font-family: 'Nunito', sans-serif;
 }
 
 .formContent button:hover {
@@ -391,68 +409,18 @@ button[disabled]:hover {
 
 /* END SIGNUP - LOGIN - FORGETPASSWORD */
 
+/* FOOTER */
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/* END LOADER */
-
-/* LOGOUT SWITCH */
-.logoutContainer {
+.footer-container
+{
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 30px;
-}
-
-
-
-@media screen and (max-width: 980px) {
-  /* Change Modal elements */
-  .modalBody {
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 30px;
-  }
-
-  .modalContainer {
-    flex: 0 1 90%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1110px) {
-   /* make container full width */
-   .container {
-    flex: 0 1 100%;
-  }
-
-  /* hide all images on forms */
-  .formBoxLeftSignup,
-  .formBoxLeftLogin,
-  .formBoxLeftForget {
-    display: none;
-  }
-
-  .formBoxRight {
-    flex: 0 1 100%;
-  }
-
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 70px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  margin: auto;
+  padding: auto;
 }
